@@ -1,13 +1,446 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ali Akbar - AI/ML Researcher Portfolio">
+  <title>Ali Akbar | AI/ML Engineer & Researcher</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">&lt;Ali Akbar /&gt;</a>
+      <div class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#research-interests" class="nav-link">Research</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#ml-projects" class="nav-link">ML Research</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#publications" class="nav-link">Publications</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Ali Akbar</h1>
+        <h2 class="hero-title">AI/ML Researcher</h2>
+        <p class="hero-tagline">
+          Building intelligent systems — RAG pipelines, LLM-powered agents, and multimodal AI. 
+          Researching at the intersection of Machine Learning, Computer Vision, and Healthcare AI.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+          <a href="./assets/documents/Ali_Akbar_CV.pdf" class="btn btn-secondary" download><i class="fas fa-download"></i> Resume</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/AliAkbar3575?tab=repositories" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/ali-akbar-5a7a8521a/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:aliakbar357589@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://scholar.google.com/citations?user=oo1zFzUAAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+          <a href="https://aliakbar3575.github.io" target="_blank" rel="noopener" aria-label="Website"><i class="fas fa-globe"></i></a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="./assets/images/profile_square.jpg" alt="Ali Akbar" class="hero-img-placeholder">
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="section-divider"></div>
+      <div class="about-content">
+        <div class="about-text fade-in">
+          <p>
+            I am an AI/ML researcher with hands-on experience building RAG pipelines, LLM-powered agents, and multimodal AI systems using LangChain, LangGraph, LangSmith, PyTorch, and vector databases. I completed my B.Sc. in Electrical and Electronic Engineering from the University of Dhaka and worked as a Research Assistant at the Data & Design Lab (CSE, University of Dhaka), contributing to a government-funded ML deployment project, an LLM-powered domain chatbot, and a real-time data visualization dashboard. My research spans Machine Learning, Computer Vision, and Healthcare AI across 4 published and ongoing works — including microbacterial instance segmentation, gut microbiome-based IBS diagnosis, and plant leaf disease VQA — with an acknowledged contribution on an ACL Findings 2025 paper. I was Runner-up (Top 2) at the ACM UbiComp 2021 International Nurse Care Activity Recognition Challenge. I am currently seeking opportunities in AI/ML Engineering roles at the intersection of Agentic AI, Multimodal Systems, and Healthcare AI.
+          </p>
+          <p>
+            Runner-up (top 2) at the ACM UbiComp 2021 International Nurse Care Activity Recognition Challenge. 
+            Acknowledged contributor on an ACL Findings 2025 paper.
+          </p>
+          <div class="about-details">
+            <div class="about-item">
+              <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+              <p><strong>B.Sc. in Electrical & Electronic Engineering</strong></p>
+              <p>University of Dhaka (Jan 2019 – Apr 2024)</p>
+              <p>CGPA: 3.52 / 4.00</p>
+            </div>
+            <div class="about-item">
+              <h3><i class="fas fa-bullseye"></i> Career Objective</h3>
+              <p>
+                To leverage expertise in AI/ML engineering and research to build impactful intelligent systems, 
+                advance the state of the art in NLP and Computer Vision, and contribute to open-source AI.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research Interests Section -->
+  <section id="research-interests" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Research Interests</h2>
+      <div class="section-divider"></div>
+      <div class="interests-grid fade-in">
+        <div class="interest-card">
+          <div class="interest-icon"><i class="fas fa-brain"></i></div>
+          <h3>Machine Learning</h3>
+        </div>
+        <div class="interest-card">
+          <div class="interest-icon"><i class="fas fa-eye"></i></div>
+          <h3>Computer Vision</h3>
+        </div>
+        <div class="interest-card">
+          <div class="interest-icon"><i class="fas fa-pen-fancy"></i></div>
+          <h3>Generative AI</h3>
+        </div>
+        <div class="interest-card">
+          <div class="interest-icon"><i class="fas fa-comment-dots"></i></div>
+          <h3>LLMs</h3>
+        </div>
+        <div class="interest-card">
+          <div class="interest-icon"><i class="fas fa-heartbeat"></i></div>
+          <h3>AI for Healthcare</h3>
+        </div>
+        <div class="interest-card">
+          <div class="interest-icon"><i class="fas fa-microscope"></i></div>
+          <h3>Multimodal AI</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="section-divider"></div>
+      <div class="skills-content fade-in">
+        <div class="skill-category">
+          <h3><i class="fas fa-code"></i> Programming Languages</h3>
+          <div class="skill-tags">
+            <span>C</span><span>Java</span><span>Python</span><span>MATLAB</span><span>MySQL</span><span>LaTeX</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-layer-group"></i> ML/DL Frameworks</h3>
+          <div class="skill-tags">
+            <span>PyTorch</span><span>TensorFlow</span><span>Scikit-learn</span><span>OpenCV</span><span>MLflow</span><span>DVC</span><span>FastAPI</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-robot"></i> LLM & Agentic AI</h3>
+          <div class="skill-tags">
+            <span>LangChain</span><span>LangGraph</span><span>LangSmith</span><span>Pydantic</span><span>FAISS</span><span>Pinecone</span>
+            <span>HuggingFace</span><span>LLM APIs</span><span>RAG</span><span>Advanced RAG</span><span>Prompt Engineering</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-chart-bar"></i> Data Science Tools</h3>
+          <div class="skill-tags">
+            <span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>MS Excel</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-tools"></i> Other Tools</h3>
+          <div class="skill-tags">
+            <span>Git</span><span>Docker</span><span>Streamlit</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="section-divider"></div>
+      <div class="projects-grid fade-in">
+        <div class="project-card">
+          <div class="project-info">
+            <div class="ml-project-icon"><i class="fas fa-file-alt"></i></div>
+            <h3>OCR-Based Handwritten Scanned Document Extraction, Summarization, and Retrieval System</h3>
+            <p class="project-desc">End-to-end pipeline for processing handwritten scanned documents — extracting text via OCR, chunking semantically, and indexing into a FAISS vector store for retrieval. RAG-based QA with source references and Human-in-the-Loop feedback.</p>
+            <button class="see-more-btn">See more</button>
+            <div class="project-tech">
+              <span>OCR</span><span>FAISS</span><span>RAG</span><span>LangChain</span><span>HITL</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/AliAkbar3575/ocr-rag-summary" target="_blank" rel="noopener" class="btn btn-sm"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-info">
+            <div class="ml-project-icon"><i class="fas fa-comments"></i></div>
+            <h3>Conversational AI Chatbot with Memory Using LangGraph and Streamlit</h3>
+            <p class="project-desc">Multi-turn conversational AI chatbot using LangGraph's StateGraph and MemorySaver for graph-based state management. Real-time token streaming via Groq inference backend with Streamlit frontend.</p>
+            <button class="see-more-btn">See more</button>
+            <div class="project-tech">
+              <span>LangGraph</span><span>Streamlit</span><span>Groq</span><span>Python</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/AliAkbar3575/langgraph-ai-chatbot" target="_blank" rel="noopener" class="btn btn-sm"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-info">
+            <div class="ml-project-icon"><i class="fas fa-globe"></i></div>
+            <h3>RAG System for Multi-Source Website Question Answering</h3>
+            <p class="project-desc">RAG pipeline that ingests content from up to 3 simultaneous URLs. Processes web content with HuggingFace embeddings into FAISS vector store and generates source-referenced answers with LangSmith latency tracking.</p>
+            <button class="see-more-btn">See more</button>
+            <div class="project-tech">
+              <span>RAG</span><span>HuggingFace</span><span>FAISS</span><span>LangSmith</span><span>Python</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/AliAkbar3575/FAISS_news_retriever" target="_blank" rel="noopener" class="btn btn-sm"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Applied ML Projects Section -->
+  <section id="ml-projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Applied ML Projects & Research</h2>
+      <div class="section-divider"></div>
+      <div class="ml-projects-grid fade-in">
+        <div class="ml-project-card">
+          <div class="ml-project-icon"><i class="fas fa-running"></i></div>
+          <h3>Nurse Care Activity Recognition from Accelerometer Data</h3>
+          <p class="project-desc">Engineered time-frequency features from raw accelerometer signals using FFT and DWT. Applied Variance Threshold, ANOVA, and Chi-square feature selection. Achieved 87% accuracy using LightGBM — contributed to runner-up at ACM UbiComp 2021 Challenge.</p>
+          <button class="see-more-btn">See more</button>
+          <div class="project-tech">
+            <span>ML</span><span>FFT/DWT</span><span>Signal Processing</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/AliAkbar3575/Nurse_Care_Activity_Recognition_Challenge_2021" target="_blank" rel="noopener" class="btn btn-sm"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+
+        <div class="ml-project-card">
+          <div class="ml-project-icon"><i class="fas fa-bacteria"></i></div>
+          <h3>Micro-bacterial Segmentation using ViT-based Hybrid Model</h3>
+          <p class="project-desc">Max-ViT backbone-based Mask R-CNN for end-to-end microbacterial instance segmentation on M-ROSE dataset. Outperformed ResNet50 Mask R-CNN, Mask2Former, and YOLOv11 — mAP 79.31%, F1 70.01%. Applied ROI Activation CAM for interpretability.</p>
+          <button class="see-more-btn">See more</button>
+          <div class="project-tech">
+            <span>PyTorch</span><span>ViT</span><span>Mask R-CNN</span><span>OpenCV</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/AliAkbar3575/Bacterial_Image_Seg_and_Detection" target="_blank" rel="noopener" class="btn btn-sm"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+
+        <div class="ml-project-card">
+          <div class="ml-project-icon"><i class="fas fa-dna"></i></div>
+          <h3>Gut Microbiome ML for IBS Diagnosis</h3>
+          <p class="project-desc">Curated hybrid dataset of 1,109 gut microbiome samples (NCBI + Bangladeshi samples). Processed through CZID pipeline, optimized with Optuna Bayesian optimization under 5-fold CV. Logistic Regression achieved 79.73% accuracy, MCC 0.5876. Manuscript in preparation.</p>
+          <button class="see-more-btn">See more</button>
+          <div class="project-tech">
+            <span>Python</span><span>Scikit-learn</span><span>Optuna</span><span>Bioinformatics</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/AliAkbar3575/IBS_vs_Healthy_Control" target="_blank" rel="noopener" class="btn btn-sm"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+
+        <div class="ml-project-card">
+          <div class="ml-project-icon"><i class="fas fa-leaf"></i></div>
+          <h3>Thinking Like a Botanist: MLLMs with Chain-of-Inquiry</h3>
+          <p class="project-desc">Contributed large-scale data collection for PlantInquiryVQA — 24,964 images, 138,078 QA pairs with reasoning chains. Evaluated SOTA MLLMs (Qwen, Grok, Mistral, Gemma). Published in ACL Findings 2025 as acknowledged contributor.</p>
+          <button class="see-more-btn">See more</button>
+          <div class="project-tech">
+            <span>Multimodal AI</span><span>VQA</span><span>MLLMs</span><span>Python</span>
+          </div>
+          <div class="project-links">
+            <a href="https://arxiv.org/abs/2604.20983" target="_blank" rel="noopener" class="btn btn-sm"><i class="fas fa-file-alt"></i> Paper</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Research Experience</h2>
+      <div class="section-divider"></div>
+      <div class="timeline fade-in">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Volunteer ML Researcher</h3>
+              <span class="timeline-date">May 2026 – Present</span>
+            </div>
+            <p class="timeline-org"><i>icddr,b </i>(International Centre for Diarrhoeal Disease Research, Bangladesh)</p>
+            <p class="project-desc">Developing a Linux-based shotgun metagenomics pipeline using SRA Toolkit, KneadData, and MetaPhlAn to
+            acquire, preprocess, and generate taxonomic abundance profiles from publicly available healthy-control gut mi-
+            crobiome sequencing data. Integrating these data with organization's existing cohort of 67 IBD patient samples
+            to support comparative microbiome analysis and downstream machine learning studies for identifying disease-associated microbial signatures.</p>
+            <button class="see-more-btn">See more</button>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Research Assistant</h3>
+              <span class="timeline-date">Feb 2025 – Dec 2025</span>
+            </div>
+            <p class="timeline-org"><i>Data & Design Lab</i>, Department of CSE, University of Dhaka</p>
+            <p class="project-desc">Collected real-time field data from substations, developed data analytics solutions, preprocessed and transformed
+            electricity-sector datasets into structured formats for system integration and data-driven decision-making, and
+            contributed to the development of Biddyut Bandhu, a domain-specific chatbot.</p>
+            <button class="see-more-btn">See more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications Section -->
+  <section id="publications" class="section">
+    <div class="container">
+      <h2 class="section-title">Publications</h2>
+      <div class="section-divider"></div>
+      <div class="publications-list fade-in">
+        <div class="publication-card">
+          <div class="pub-icon"><i class="fas fa-file-alt"></i></div>
+          <div class="pub-content">
+            <h3>Nurse Care Activity Recognition from Accelerometer Sensor Data Using Fourier-and Wavelet-based Features</h3>
+            <p class="pub-authors">Kowshik, M. Ashikuzzaman, Yeasin Arafat Pritom, Md Sohanur Rahman, <strong>Ali Akbar</strong>, and Md Atiqur Rahman Ahad</p>
+            <p class="pub-venue"><em>Adjunct Proceedings of the 2021 ACM International Joint Conference on Pervasive and Ubiquitous Computing (UbiComp 2021)</em>, pp. 434-439, 2021.</p>
+            <div class="pub-links">
+              <a href="https://dl.acm.org/doi/10.1145/3460418.3479387" target="_blank" rel="noopener" class="btn btn-sm"><i class="fas fa-external-link-alt"></i> Paper Link</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="publication-card">
+          <div class="pub-icon"><i class="fas fa-file-alt"></i></div>
+          <div class="pub-content">
+            <h3>Thinking Like a Botanist: Challenging Multimodal Language Models with Intent Driven Chain-of-Inquiry</h3>
+            <p class="pub-authors"><strong>Acknowledged Contributor</strong> — Large-scale data collection for PlantInquiryVQA</p>
+            <p class="pub-venue"><em>ACL Findings 2025</em></p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2604.20983" target="_blank" rel="noopener" class="btn btn-sm"><i class="fas fa-external-link-alt"></i> Paper Link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Awards & Achievements</h2>
+      <div class="section-divider"></div>
+      <div class="achievements-grid fade-in">
+        <div class="achievement-card">
+          <div class="achievement-icon"><i class="fas fa-trophy"></i></div>
+          <h3>Runner-up</h3>
+          <p>Third Nurse Care Activity Recognition Challenge, 2021</p>
+          <span class="achievement-org">HASCA Workshop, ACM UbiComp</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="section-divider"></div>
+      <div class="contact-content fade-in">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:aliakbar357589@gmail.com">Gmail</a>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <a href="tel:+8801522122057">+8801522 122 057</a>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-github"></i>
+            <a href="https://github.com/AliAkbar3575?tab=repositories" target="_blank" rel="noopener">GitHub</a>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-linkedin-in"></i>
+            <a href="https://www.linkedin.com/in/ali-akbar-5a7a8521a/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-graduation-cap"></i>
+            <a href="https://scholar.google.com/citations?user=oo1zFzUAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-globe"></i>
+            <a href="https://aliakbar3575.github.io" target="_blank" rel="noopener">Personal Website</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-socials">
+        <a href="https://github.com/AliAkbar3575?tab=repositories" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/ali-akbar-5a7a8521a/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:aliakbar357589@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://scholar.google.com/citations?user=oo1zFzUAAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ali Akbar. Built with <i class="fas fa-heart"></i> for AI & Research.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
 </html>

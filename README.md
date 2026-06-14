@@ -1,62 +1,76 @@
-# Ali Akbar — Portfolio
+# Ali Akbar - Portfolio Website
 
-This repository is a production-ready personal portfolio site for Ali Akbar, generated from the official CV `Ali_Akbar_CV.pdf` (single source of truth).
+A modern, responsive static portfolio website for Ali Akbar — AI/ML Engineer & Researcher. Built with pure HTML, CSS, and JavaScript.
 
-Features
-- Modern responsive React site (Vite)
-- TailwindCSS + custom variables
-- Framer Motion animations
-- Theme persistence (dark default)
-- Sections: Hero, About, Research Interests, Skills, Projects, Applied Research, Experience, Publications, Contact
+## Features
 
-Installation
+- Fully responsive (mobile, tablet, desktop)
+- Clean, minimal, and professional design
+- Smooth scrolling with active nav highlighting
+- Mobile hamburger menu with smooth toggle
+- Scroll-triggered fade-in animations
+- Card-based project and publication layout
+- Research interest grid with hover effects
+- Timeline-style experience section
+- Contact section with all professional links
+- Resume download button
+- Accessible and keyboard-friendly
+- Fast loading, no framework dependencies
 
-1. Install dependencies:
+## Folder Structure
 
-```bash
-npm install
-# also install optional packages for deployment
-npm install -D tailwindcss postcss autoprefixer framer-motion lucide-react
+```
+/portfolio
+├── index.html
+├── README.md
+├── css/
+│   └── style.css
+├── js/
+│   └── main.js
+└── assets/
+    └── images/
 ```
 
-Development
+## How to Run
+
+Simply open `index.html` in any modern web browser:
 
 ```bash
-npm run dev
+open index.html
+# or
+xdg-open index.html
 ```
 
-Build
+No build tools, servers, or dependencies required.
 
-```bash
-npm run build
-```
+## Sections
 
-Deployment (GitHub Pages)
+1. **Hero** — Name, designation, tagline, CTA buttons, social links
+2. **About** — Professional summary, education, research focus, career objective
+3. **Research Interests** — ML, Deep Learning, Computer Vision, NLP, Generative AI, LLMs, AI for Healthcare, Multimodal AI
+4. **Technical Skills** — Categorized into Languages, ML/DL Frameworks, LLM & Agentic AI, Data Science Tools, Other Tools
+5. **Projects** — 3 featured AI/ML engineering projects
+6. **Applied ML Projects & Research** — 4 research-driven ML projects
+7. **Research Experience** — Timeline with icddr,b and Data & Design Lab roles
+8. **Publications** — ACM UbiComp 2021 paper, ACL Findings 2025, manuscript in preparation
+9. **Awards & Achievements** — ACM UbiComp runner-up, hackathon participation
+10. **Contact** — Email, phone, GitHub, LinkedIn, Google Scholar, website
+11. **Footer** — Quick links, socials, copyright
 
-Install `gh-pages` and add a `homepage` in `package.json`, then run:
+## Tech Stack
 
-```bash
-npm install --save-dev gh-pages
-npm run build
-npm run deploy
-```
+- **HTML5** — Semantic markup
+- **CSS3** — Flexbox, Grid, CSS variables, animations, responsive design
+- **JavaScript** — Vanilla JS (Intersection Observer, DOM manipulation, event handling)
+- **Font Awesome** — Icon library
+- **Google Fonts** — Inter & Fira Code typography
 
-Folder structure
+## Customization
 
-See the `src/` folder for components, sections, and `src/data/portfolioData.js` which is populated directly from `Ali_Akbar_CV.pdf`.
-# React + Vite
+- Edit `index.html` to update content
+- Modify CSS variables in `:root` in `css/style.css` to change theme colors
+- Add profile image to `assets/images/` and update the hero section markup
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## License
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+© 2026 Ali Akbar. All rights reserved.
